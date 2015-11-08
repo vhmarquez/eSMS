@@ -3130,8 +3130,9 @@ body {
   display: block;
   position: relative;
   padding: 48px 24px 12px 24px;
-  background: url("../assets/img/texture-bg.png") repeat;
-  margin-bottom: 12px;
+  background: #333 url("../assets/img/c9-banner.png") no-repeat 80% 50%;
+  background-size: 50%;
+  margin-bottom: 24px;
   border-bottom: 6px solid #999;
 }
 
@@ -3167,17 +3168,6 @@ body {
   z-index: 1;
   display: block;
   position: relative;
-}
-
-.page-title {
-  z-index: 1;
-  position: relative;
-  display: block;
-  text-align: left;
-  font-size: 24px;
-  letter-spacing: 3.3px;
-  color: #444;
-  margin-bottom: 0;
 }
 
 .logo-wrap {
@@ -3254,6 +3244,17 @@ body {
 }
 .icon-menu:hover, .icon-menu:active, .icon-menu:focus {
   background: #19b698;
+}
+
+.page-title {
+  z-index: 1;
+  position: relative;
+  display: block;
+  text-align: left;
+  font-size: 24px;
+  letter-spacing: 3.3px;
+  color: #fff;
+  margin-bottom: 0;
 }
 
 .sub-title {
