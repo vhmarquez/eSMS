@@ -1,0 +1,26 @@
+.box
+  display: block
+  position: relative
+
+  &.header
+    border-bottom: 4px solid darken(#eee, 5%)
+    padding: 12px
+
+  &.body
+    background: #ecf0f1
+
+  &.row
+    padding: 12px 12px
+    border-bottom: 1px solid #cecece
+    +transition(all .3s ease-in-out)
+
+    +hover
+      background: #16a085
+      color: #fff
+      cursor: pointer
+
+      .champion-name
+        color: #fff
+
+      .champion-title
+        color: #fff

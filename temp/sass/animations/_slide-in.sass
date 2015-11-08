@@ -1,0 +1,32 @@
+// //////////////////////////////////////////////
+// SLIDE IN
+// //////////////////////////////////////////////
+
++keyframes(slide-in)
+	0%
+		display: block
+		+opacity(0)
+		+transform(translateY(-1000px))
+	100%
+		+opacity(1)
+		+transform(translateY(0))
+
++keyframes(slide-in-subtle)
+	0%
+		display: block
+		+opacity(0)
+		+transform(translateY(-5px))
+	90%
+		+opacity(1)
+		+transform(translateY(0))
+
++keyframes(slide-out-subtle)
+	0%
+		display: block
+		+opacity(1)
+		+transform(translateY(0))
+	99%
+		+opacity(0)
+		+transform(translateY(-5px))
+	100%
+		display: none

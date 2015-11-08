@@ -1,0 +1,31 @@
+
+// LISTING
+////////////////////////////////////////////////
+
+.list-item
+  display: table
+  position: relative
+  width: 100%
+
+.list-item--media,
+.list-item--body
+  display: table-cell
+  position: relative
+  vertical-align: middle
+
+  &.top
+    vertical-align: top
+
+  &.bottom
+    vertical-align: bottom
+
+.list-item--media
+  padding-right: 12px
+
+  > img
+    display: block
+    width: 62px
+    height: 62px
+
+.list-item--body
+  width: 100%

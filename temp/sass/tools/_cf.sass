@@ -1,0 +1,22 @@
+
+// clearfix
+///////////////////////////////////////
+
+%cf,
+.cf
+	&:before,
+	&:after
+		content: " "
+		display: table
+
+	&:after
+		clear: both
+
+=cf
+	&:before,
+	&:after
+		content: " "
+		display: table
+
+	&:after
+		clear: both

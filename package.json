@@ -1,0 +1,13 @@
+{
+  "name": "contact-book",
+  "version": "1.0.0",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-watch": "*",
+    "gulp-rename": "*",
+    "gulp-compass": "*",
+    "gulp-minify-css": "*",
+    "gulp-uglify": "*",
+    "gulp-concat": "*"
+  }
+}

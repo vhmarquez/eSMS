@@ -1,0 +1,37 @@
+
+// NAVIGATION
+////////////////////////////////////////////////
+
+.nav
+  display: block
+  position: relative
+
+.nav-item
+  display: block
+  position: relative
+  padding: 12px
+  font-size: 16px
+  color: #16a085
+  background: darken(#222, 2%)
+  border-bottom: 1px solid darken(#222, 5%)
+  +box-shadow(0 1px 0 lighten(#222, 3%), inset (0 1px 0 lighten(#222, 3%)))
+  text-decoration: none
+  +transition(all .3s ease-in-out)
+
+
+  .icon-chevron-right
+    display: block
+    position: absolute
+    color: #16a085
+    top: 10px
+    right: 12px
+    font-size: 26px
+    +transition(all .3s ease-in-out)
+
+  +hover
+    background: darken(#222, 5%)
+    color: #16a085
+    +box-shadow(6px 0 0 #16a085)
+
+    .icon-chevron-right
+      +transform(translateX(12px))

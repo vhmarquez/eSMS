@@ -1,0 +1,39 @@
+////////////////////////////////////////////////
+// GRIDS
+////////////////////////////////////////////////
+
+// default grid behavior
+///////////////////////////////////////
+
+%grid,
+.grid
+	@extend %cf
+	width: 100%
+	margin-left: -$base-spacing-unit
+
+.grid-half
+	@extend %cf
+	width: 100%
+	margin-left: -$hsu
+
+%grid-item,
+.grid-item
+	position: relative
+	width: 100% // default grid items to be own segements in mobile
+	padding-left: $base-spacing-unit
+	float: left
+
+// full grid
+///////////////////////////////////////
+
+%grid-full,
+.grid-full
+	@extend %cf
+	margin-left: 0!important
+	width: 100%
+
+.grid-item-full
+	position: relative
+	width: 100% // default grid items to be own segements in mobile
+	padding-left: 0!important
+	float: left

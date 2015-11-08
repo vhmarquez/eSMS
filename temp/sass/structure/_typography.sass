@@ -1,0 +1,161 @@
+
+// TYPOGRAPHY
+////////////////////////////////////////////////
+
+// fonts
+////////////////////////////////////////////////
+
+=material
+	font-family: 'icomoon'
+
+=open-sans
+	font-family: 'Open Sans', sans-serif
+
+// align
+////////////////////////////////////////////////
+
+.center
+	text-align: center
+
+.left
+	text-align: left
+
+// headings
+////////////////////////////////////////////////
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	margin-top: 0
+	margin-bottom: 12px
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	color: #444
+	text-transform: uppercase
+
+// p
+p
+	margin: 0 0 12px 0
+	font-size: 18px
+	line-height: 22px
+	color: #707070
+
+	&.small
+		font-size: 13px
+		letter-spacing: 2px
+
+p,
+li,
+span,
+pre
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+// anchors
+////////////////////////////////////////////////
+
+a
+	color: #707070
+	+transition(color .4s ease-in-out)
+
+	+hover
+		color: #333
+
+	&.arrow
+		display: inline-block
+		font-size: 13.22px
+		letter-spacing: 2px
+		font-weight: 100
+		text-transform: uppercase
+		text-decoration: none
+		+transition(all .3s ease-in-out)
+
+		i
+			position: relative
+			left: 6px
+			+transition(all .3s ease-in-out)
+
+		+hover
+			i
+				left: 9px
+
+	&.bottom
+		+media-query(lap)
+			position: absolute
+			bottom: 50px
+
+// listings
+////////////////////////////////////////////////
+
+ul
+	margin-bottom: 0
+
+ul,
+li
+	font-size: 18px
+	line-height: 27px
+	color: #707070
+	text-align: left
+
+ul.floated
+	@extend .cf
+	padding-left: 0
+
+	li
+		font-size: 16px
+		display: inline-block
+		padding: 6px 12px
+		border: 3px solid #777
+		margin: 0 6px 6px 0
+
+// sections
+////////////////////////////////////////////////
+
+.section-title
+	font-size: 24px
+	letter-spacing: 3.33px
+	line-height: 25px
+
+
+// sub sections
+////////////////////////////////////////////////
+
+.sub-section-title
+	display: block
+	position: relative
+	font-size: 24px
+	text-transform: uppercase
+	font-weight: 100
+	letter-spacing: 8px
+	margin-bottom: 42px
+	color: #707070
+	text-decoration: none
+
+.sub-section--sub-title
+	display: block
+	position: relative
+	font-size: 14px
+	text-transform: uppercase
+	text-decoration: none
+	letter-spacing: 2px
+	margin-bottom: 42px
+
+// champions
+////////////////////////////////////////////////
+
+.champion-name
+	position: relative
+	display: block
+	font-size: 16px
+	color: #666
+	font-weight: 900
+	text-transform: uppercase
+
+.champion-title
+	position: relative
+	display: block
+	font-size: 12px
+	color: #16a085
