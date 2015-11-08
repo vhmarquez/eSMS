@@ -96,10 +96,35 @@ body
 	font-family: "Oswald"
 	color: #fff
 	margin-bottom: 0
+	padding: 0 12px
 	+transition(all .3s ease-in-out)
 
-	.left
-		padding-left: 12px
+	&:after
+		content: ''
+		position: absolute
+		display: block
+		height: 34px
+		width: 3px
+		background: #fff
+		top: 0
+		right: 0
+
+
+	+hover
+		color: darken(#16a085, 10%)
+		cursor: pointer
+
+.product
+	position: relative
+	display: inline-block
+	text-align: left
+	font-size: 14px
+	letter-spacing: 2px
+	top: -4px
+	font-family: "Oswald"
+	color: #fff
+	padding-left: 12px
+	+transition(all .3s ease-in-out)
 
 	+hover
 		color: darken(#16a085, 10%)

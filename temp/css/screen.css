@@ -3198,15 +3198,43 @@ body {
   font-family: "Oswald";
   color: #fff;
   margin-bottom: 0;
+  padding: 0 12px;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.logo .left {
-  padding-left: 12px;
+.logo:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 34px;
+  width: 3px;
+  background: #fff;
+  top: 0;
+  right: 0;
 }
 .logo:hover, .logo:active, .logo:focus {
+  color: #107360;
+  cursor: pointer;
+}
+
+.product {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 2px;
+  top: -4px;
+  font-family: "Oswald";
+  color: #fff;
+  padding-left: 12px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.product:hover, .product:active, .product:focus {
   color: #107360;
   cursor: pointer;
 }
